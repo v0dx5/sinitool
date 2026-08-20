@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070B12">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SiniTool"
+            android:textColor="#00F5A0"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OP memory toolkit · floating bubble · root"
+            android:textColor="#7A8BA3"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="#101826"
+            android:padding="16dp"
+            android:textColor="#E8EEF7"
+            android:textSize="14sp"
+            android:fontFamily="monospace" />
+        <Button android:id="@+id/btnOverlay" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="16dp"
+            android:text="1 · Grant overlay" />
+        <Button android:id="@+id/btnRootTest" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp"
+            android:text="2 · Test root" />
+        <Button android:id="@+id/btnStart" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp"
+            android:text="3 · Start Sini bubble" />
+        <Button android:id="@+id/btnStop" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp"
+            android:text="Stop bubble" />
+    </LinearLayout>
+</ScrollView>
