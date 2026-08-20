@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_panel"
+    android:padding="12dp"
+    android:elevation="14dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="SiniTool Scanner" android:textColor="#00F5A0"
+        android:textStyle="bold" android:textSize="16sp" />
+    <Spinner android:id="@+id/spinnerApps" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="8dp"
+        android:background="#152033" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginTop="6dp">
+        <Button android:id="@+id/btnRefreshApps" android:layout_width="0dp"
+            android:layout_height="40dp" android:layout_weight="1" android:text="Refresh" android:textSize="11sp" />
+        <Button android:id="@+id/btnAttach" android:layout_width="0dp"
+            android:layout_height="40dp" android:layout_weight="1" android:text="Attach" android:textSize="11sp" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginTop="6dp">
+        <Spinner android:id="@+id/spinnerType" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1" android:background="#152033" />
+        <EditText android:id="@+id/inputValue" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:hint="value" android:inputType="numberDecimal|numberSigned"
+            android:textColor="#E8EEF7" android:textColorHint="#6B7C93" android:textSize="13sp" />
+    </LinearLayout>
+    <Button android:id="@+id/btnScan" android:layout_width="match_parent"
+        android:layout_height="42dp" android:text="Scan" android:textSize="12sp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:id="@+id/btnFilterChanged" android:layout_width="0dp"
+            android:layout_height="40dp" android:layout_weight="1" android:text="Changed" android:textSize="10sp" />
+        <Button android:id="@+id/btnFilterUnchanged" android:layout_width="0dp"
+            android:layout_height="40dp" android:layout_weight="1" android:text="Unchanged" android:textSize="10sp" />
+        <Button android:id="@+id/btnFilterExact" android:layout_width="0dp"
+            android:layout_height="40dp" android:layout_weight="1" android:text="Exact" android:textSize="10sp" />
+    </LinearLayout>
+    <Button android:id="@+id/btnList" android:layout_width="match_parent"
+        android:layout_height="40dp" android:text="List results" android:textSize="11sp" />
+    <EditText android:id="@+id/inputEditValue" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="new value (write all)"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColor="#E8EEF7" android:textColorHint="#6B7C93" android:textSize="13sp" />
+    <Button android:id="@+id/btnWriteAll" android:layout_width="match_parent"
+        android:layout_height="42dp" android:text="Write ALL results" android:textSize="12sp" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="140dp"
+        android:layout_marginTop="6dp" android:background="#080C14">
+        <TextView android:id="@+id/panelLog" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:padding="8dp"
+            android:textColor="#9FB2C9" android:textSize="11sp" android:fontFamily="monospace" />
+    </ScrollView>
+    <Button android:id="@+id/btnClosePanel" android:layout_width="match_parent"
+        android:layout_height="40dp" android:text="Close" android:textSize="11sp" />
+</LinearLayout>
